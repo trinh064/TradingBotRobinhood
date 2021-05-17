@@ -3,14 +3,14 @@ import robin_stocks.gemini as gem
 import robin_stocks.tda as tda
 import sys
 import os
-
+import getpass
 import pyotp
 import robin_stocks as robin
 import pandas as pd
 #lines = open('./cred.txt').read().splitlines()
 #KEY = lines[0]
 EMAIL = input("Email:")
-PASSWD = input("Password:")
+PASSWD = getpass.getpass("Password: ")
 #CODE = lines[3]
 #totp = pyotp.TOTP(KEY).now()
 
